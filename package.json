@@ -3,6 +3,20 @@
   "version": "1.0.0",
   "description": "React hook to easily create a Game of Life",
   "main": "/lib/index.js",
+  "files": [
+    "/lib/**/*",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JAFB321/react-game-life.git"
+  },
+  "author": "JAFB321",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JAFB321/react-game-life/issues"
+  },
+  "homepage": "https://github.com/JAFB321/react-game-life#readme",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,8 +26,6 @@
     "game of life",
     "canvas"
   ],
-  "author": "JAFB321",
-  "license": "ISC",
   "devDependencies": {
     "typescript": "^4.7.4"
   },
