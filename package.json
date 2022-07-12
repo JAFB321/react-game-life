@@ -1,0 +1,27 @@
+{
+  "name": "react-game-life",
+  "version": "1.0.0",
+  "description": "React hook to easily create a Game of Life",
+  "main": "/lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "game of life",
+    "canvas"
+  ],
+  "author": "JAFB321",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "game-life": "^1.2.3-a",
+    "react": "^18.2.0"
+  }
+}
