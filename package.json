@@ -1,6 +1,6 @@
 {
   "name": "react-game-life",
-  "version": "1.0.0d",
+  "version": "1.0.0e",
   "description": "React hook to easily create a Game of Life",
   "main": "lib/index.js",
   "files": [
