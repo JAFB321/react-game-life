@@ -16,7 +16,7 @@ export const useGameLife = (defaultConfig: GameLifeConfig = {})
         const {current: canvas} = canvasRef;
         
         if(canvas && !initialized.current){   
-            const game = GameLife(canvas)
+            const game = GameLife(canvas, defaultConfig || {})
             setGameInstance(game);
             initialized.current = true;
         }
