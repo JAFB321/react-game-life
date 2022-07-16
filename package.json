@@ -1,8 +1,16 @@
 {
   "name": "react-game-life",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React hook to easily create a Game of Life",
-  "main": "lib/index.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/esm/index.d.ts",
+  "modules": {
+    ".": {
+      "import": "./lib/esm/index.js",
+      "require": "./lib/cjs/index.js"
+    }
+  },
   "files": [
     "lib/**/*",
     "README.md"
@@ -18,7 +26,10 @@
   },
   "homepage": "https://github.com/JAFB321/react-game-life#readme",
   "scripts": {
-    "build": "tsc",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir ./lib/cjs",
+    "clean": "rm -rf ./lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
